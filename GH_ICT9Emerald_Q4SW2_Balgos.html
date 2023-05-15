@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time Converter</title>
+	<style>
+		table{
+			border-style:ridge;
+			border-color: #BA9FE7;
+			text-align: center;
+			margin: 100px;
+			height: 250px;
+			width: 670px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: auto;
+			border-width: 8px;
+			background-color: #F5F5F4;
+		}
+		body{
+			background-image: url(https://w.forfun.com/fetch/c2/c20db3ef92b5119a59b70aba0e52ef0b.jpeg);
+		}
+	</style>
+</head>
+<body>
+	<br>
+	<center><h1>Time Converter</h1></center>
+			
+<center><table></center>
+<tr>
+	<th style="background-color:#ceffc9">
+		<h3>Days to Seconds</h3>
+		<p>Days: <input type="text" id="value1" placeholder="Days"></p>
+		<input type="submit" value="=" onclick="forMultiplication1()">
+		<p> Seconds: <span id="id1"></span></p>
+	</th>
+
+	<th style="background-color:#B4CBF0">
+		<h3>Days to Minutes</h3>
+		<p>Days: <input type="text" id="value2" placeholder="Days"></p>
+		<input type="submit" value="=" onclick="forMultiplication2()">
+		<p> Minutes: <span id="id2"></span></p>
+	</th>
+
+	<th style="background-color:#FFF8DC">
+		<h3>Days to Hours</h3>
+		<p>Days: <input type="text" id="value3" placeholder="Days"></p>
+		<input type="submit" value="=" onclick="forMultiplication3()">
+		<p> Hours: <span id="id3"></span></p>
+	</th>
+</tr>
+	</table><br>
+	<center><img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Alarm_Clock_Animation_High_Res.png" width="300px">
+	<script>
+
+	function forMultiplication1(){
+		var num1 = document.getElementById('value1').value;
+		var num2 = 86400; 
+		var prod = num1 * num2;
+		document.getElementById('id1').innerHTML = prod;
+		}
+
+	function forMultiplication2(){
+		var num1 = document.getElementById('value2').value;
+		var num2 = 1440; 
+		var prod = num1 * num2;
+		document.getElementById('id2').innerHTML = prod;
+		}
+	function forMultiplication3(){
+		var num1 = document.getElementById('value3').value;
+		var num2 = 24; 
+		var prod = num1 * num2;
+		document.getElementById('id3').innerHTML = prod;
+		}
+
+	</script>
+</body>
+</html>
